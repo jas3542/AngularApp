@@ -3,24 +3,22 @@ import { NgModule } from '@angular/core';
 
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { AppRoutingModule } from './app-routing/app-routing.module';
 
 import { AppComponent } from './app.component';
 
-import { JasComponent } from '../Components/Jas/jas.component';
-import { NameListComponent } from '../Components/NameList/nameList.component';
+import { MenuComponent } from '../Components/Menu/menu.component';
+import { DetailComponent } from '../Components/Detail/detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    JasComponent,
-    NameListComponent
+    DetailComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
-    AppRoutingModule
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

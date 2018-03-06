@@ -3,16 +3,16 @@ import { Http } from '@angular/http'
 
 
 @Component({
-  selector: 'Menu',
-  templateUrl: './nameList.component.html',
-  styleUrls: ['./nameList.component.css']
+  selector: 'Detail',
+  templateUrl: './detail.component.html',
+  styleUrls: ['./detail.component.css']
 })
 
-export class NameListComponent implements OnInit {
+export class DetailComponent implements OnInit {
   constructor(private _httpService: Http) { }
   apiValues: string[] = [];
   ngOnInit() {
-    this._httpService.get('/api/values').subscribe(values => {
+    this._httpService.get('/api/detail').subscribe(values => {
       this.apiValues = values.json() as string[];
     });
   }

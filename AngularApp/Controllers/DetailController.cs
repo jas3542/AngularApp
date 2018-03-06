@@ -6,8 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AngularApp.Controllers
 {
-    [Route("api/jas")]
-    public class JasController : Controller
+    [Route("api/detail")]
+    public class DetailController : Controller
     {
         // GET: api/<controller>
         [HttpGet]

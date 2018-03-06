@@ -5,8 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AngularApp.Controllers
 {
-    [Route("api/values")]
-    public class ValuesController : Controller
+    [Route("api/menu")]
+    public class MenuController : Controller
     {
         // GET: api/<controller>
         [HttpGet]
