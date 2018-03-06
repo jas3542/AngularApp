@@ -1,0 +1,11 @@
+C:\WorkSpace2017Jas\AngularApp\AngularApp\bin\Debug\netcoreapp2.0\AngularApp.deps.json
+C:\WorkSpace2017Jas\AngularApp\AngularApp\bin\Debug\netcoreapp2.0\AngularApp.runtimeconfig.json
+C:\WorkSpace2017Jas\AngularApp\AngularApp\bin\Debug\netcoreapp2.0\AngularApp.runtimeconfig.dev.json
+C:\WorkSpace2017Jas\AngularApp\AngularApp\bin\Debug\netcoreapp2.0\AngularApp.dll
+C:\WorkSpace2017Jas\AngularApp\AngularApp\bin\Debug\netcoreapp2.0\AngularApp.pdb
+C:\WorkSpace2017Jas\AngularApp\AngularApp\obj\Debug\netcoreapp2.0\AngularApp.csproj.CoreCompileInputs.cache
+C:\WorkSpace2017Jas\AngularApp\AngularApp\obj\Debug\netcoreapp2.0\AngularApp.AssemblyInfoInputs.cache
+C:\WorkSpace2017Jas\AngularApp\AngularApp\obj\Debug\netcoreapp2.0\AngularApp.AssemblyInfo.cs
+C:\WorkSpace2017Jas\AngularApp\AngularApp\obj\Debug\netcoreapp2.0\AngularApp.dll
+C:\WorkSpace2017Jas\AngularApp\AngularApp\obj\Debug\netcoreapp2.0\AngularApp.pdb
+C:\WorkSpace2017Jas\AngularApp\AngularApp\obj\Debug\netcoreapp2.0\AngularApp.csprojResolveAssemblyReference.cache

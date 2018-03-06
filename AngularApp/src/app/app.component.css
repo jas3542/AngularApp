@@ -1,0 +1,19 @@
+.container {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background-color: lightyellow;
+}
+
+.menu {
+  width: 30%;
+  border: 2px dashed red;
+}
+
+.detail {
+  width: 70%;
+  border: 2px dashed green;
+}
+

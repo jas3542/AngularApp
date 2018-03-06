@@ -1,0 +1,8 @@
+{
+  "_comment": "For developer. this file is used to rebuild the application whenever we make a change in the code.",
+
+  "/api": {
+    "target": "http://localhost:2063",
+    "secure": false
+  }
+}
