@@ -5,18 +5,18 @@
 <form (ngSubmit)="onSubmit(personForm)" #personForm="ngForm">
   <div class="form-group">
     <label for="name">Name</label>
-    <input type="text" class="form-control" id="name" required [(ngModel)]="PersonModel.name" name="name" #name="ngModel">
+    <input type="text" class="form-control" id="name" required [(ngModel)]="PersonModel.Name" name="name" #name="ngModel">
     
   </div>
 
   <div class="form-group">
     <label for="surname">Surname</label>
-    <input type="text" class="form-control" id="surname" [(ngModel)]="PersonModel.surname" name="surname">
+    <input type="text" class="form-control" id="surname" [(ngModel)]="PersonModel.Surname" name="surname">
   </div>
 
   <div class="form-group">
     <label for="age">Age</label>
-    <input type="text" class="form-control" id="age" [(ngModel)]="PersonModel.age" name="age">
+    <input type="text" class="form-control" id="age" [(ngModel)]="PersonModel.Age" name="age">
   </div>
 
   <button type="submit" class="btn btn-success" [disabled]="!personForm.form.valid">Submit</button>

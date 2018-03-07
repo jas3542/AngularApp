@@ -27,7 +27,7 @@ export class DetailComponent implements OnInit {
   }
 
   onSubmit(form: NgForm) {
-    //console.log(this.PersonModel.age + " - " + this.PersonModel.name + " - " + this.PersonModel.surname);
+    //console.log(this.PersonModel.Age + " - " + this.PersonModel.Name + " - " + this.PersonModel.Surname);
     this._httpService.post('/api/detail', this.PersonModel).toPromise().then((result) => {
       console.log(result.text());
       form.reset();

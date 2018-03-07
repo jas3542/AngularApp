@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using AngularApp.src.Models;
+using AngularApp.Models;
 
 namespace AngularApp.Controllers
 {
