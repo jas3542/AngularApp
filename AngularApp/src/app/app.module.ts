@@ -18,7 +18,7 @@ import { DetailComponent } from '../Components/Detail/detail.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

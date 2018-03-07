@@ -1,8 +1,24 @@
-<div class="title">
-  <h1> Welcome to {{ title }}!</h1>
-</div>
-<h2>Detail: Controller jas</h2>
+<h2>Detail: Controller Detail</h2>
 <ul>
   <li *ngFor="let value of apiValues">{{value}}</li>
 </ul>
+<form (ngSubmit)="onSubmit(personForm)" #personForm="ngForm">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" required [(ngModel)]="PersonModel.name" name="name" #name="ngModel">
+    
+  </div>
 
+  <div class="form-group">
+    <label for="surname">Surname</label>
+    <input type="text" class="form-control" id="surname" [(ngModel)]="PersonModel.surname" name="surname">
+  </div>
+
+  <div class="form-group">
+    <label for="age">Age</label>
+    <input type="text" class="form-control" id="age" [(ngModel)]="PersonModel.age" name="age">
+  </div>
+
+  <button type="submit" class="btn btn-success" [disabled]="!personForm.form.valid">Submit</button>
+  
+</form>

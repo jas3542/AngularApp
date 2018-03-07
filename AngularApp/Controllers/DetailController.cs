@@ -1,19 +1,22 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using AngularApp.src.Models;
 
 namespace AngularApp.Controllers
 {
-    [Route("api/detail")]
+    [Route("api/[controller]")]
     public class DetailController : Controller
     {
-        // GET: api/<controller>
         [HttpGet]
         public IEnumerable<string> Get()
         {
-          return new string[] { "The","Jas","Controller" };
+          return new string[] { "The","Details","Controller","List" };
+        }
+        [HttpPost]
+        public string Post(Person  p)
+        {
+          return "asdsad";
         }
   }
 }

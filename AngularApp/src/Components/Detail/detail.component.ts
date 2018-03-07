@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Http } from '@angular/http'
+import { Http } from '@angular/http';
+
+import { Person } from '../../Models/Person';
+import { NgForm } from '@angular/forms';
 
 
 @Component({
@@ -9,11 +12,26 @@ import { Http } from '@angular/http'
 })
 
 export class DetailComponent implements OnInit {
-  constructor(private _httpService: Http) { }
+  PersonModel = new Person();
   apiValues: string[] = [];
+
+  constructor(private _httpService: Http) {
+
+  }
+  
   ngOnInit() {
+    
     this._httpService.get('/api/detail').subscribe(values => {
       this.apiValues = values.json() as string[];
     });
+  }
+
+  onSubmit(form: NgForm) {
+    //console.log(this.PersonModel.age + " - " + this.PersonModel.name + " - " + this.PersonModel.surname);
+    this._httpService.post('/api/detail', this.PersonModel).toPromise().then((result) => {
+      console.log(result.text());
+      form.reset();
+    });
+    
   }
 }
