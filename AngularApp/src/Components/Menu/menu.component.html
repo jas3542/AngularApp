@@ -1,5 +1,9 @@
 <h2>Menu: Controller Menu</h2>
-<ul>
-  <li *ngFor="let value of apiValues">{{value}}</li>
-</ul>
+
+<div class="listPerson">
+  <label type="text" id="label">ID || NAME || SURNAME || AGE</label>
+  <div class="person" *ngFor="let value of apiValues" style="list-style: none;">
+    <p type="text" id="person">{{value.id}} || {{value.name}} || {{value.surname}} || {{value.age}}</p>
+  </div>
+</div>
 

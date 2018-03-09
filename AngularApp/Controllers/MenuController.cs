@@ -10,9 +10,10 @@ namespace AngularApp.Controllers
     {
         // GET: api/<controller>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<Person> Get()
         {
-            return new string[] { "Hello Their!", "Are","you","coding?" };
+          DB.GetConnection();
+          return DB.GetAllPersons();
         }
     }
 }
