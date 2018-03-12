@@ -26,7 +26,7 @@ export class DetailComponent implements OnInit {
   }
 
   onSubmit(form: NgForm) {
-    console.log(JSON.stringify(this.PersonModel));
+    //console.log(JSON.stringify(this.PersonModel));
 
     const requestOptions = {
       params: new HttpParams()
@@ -34,7 +34,7 @@ export class DetailComponent implements OnInit {
     requestOptions.params.set('Content-Type', 'application/json; charset=utf-8');
     
     this._httpService.post('/api/detail', this.PersonModel, requestOptions ).subscribe(values => {
-      console.log("result receiving-> "+values.text());
+      //console.log("result receiving-> "+values.text());
     });
     
   }

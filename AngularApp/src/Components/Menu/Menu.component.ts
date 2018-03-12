@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Http } from '@angular/http';
 import { Person } from '../../Models/Person';
+import { PersonListService } from './Service/PersonList.service';
 
 @Component({
   selector: 'Menu',
@@ -9,27 +10,27 @@ import { Person } from '../../Models/Person';
 })
 
 export class MenuComponent implements OnInit {
-  apiValues;
+  
   personArray: Person[];
 
-  constructor(private _httpService: Http) {
+  constructor(private _httpService: Http, private _personListService: PersonListService) {
 
+  }
+
+  ngOnInit() {
+    this.getPersons().then(function(result) {
+      this.personArray = result;
+    }.bind(this));
+  
   }
   
-  ngOnInit() {
-    this._httpService.get('/api/menu').subscribe(values => {
-      //console.log(values.text());
-      this.apiValues = values.json() as Person[];
-      console.log(this.apiValues);
-    });
-  }
+  getPersons(): Promise<Person> {
 
-  ngOnChanges() {
-    console.log("Heyyyyy changes");
-    this._httpService.get('/api/menu').subscribe(values => {
-      //console.log(values.text());
-      this.apiValues = values.json() as Person[];
-      console.log(this.apiValues);
-    });
+    return new Promise(function (resolve, reject) {
+
+      var personArray = this._personListService.getPersonList();
+      resolve(personArray);
+
+    }.bind(this));
   }
 }
