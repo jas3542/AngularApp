@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Http } from '@angular/http';
-
 //import { Person } from '../../Models/Person';
 import { NgForm } from '@angular/forms';
-
-import { HttpParams } from "@angular/common/http";
+import { PersonListService } from '../../Services/PersonList.service';
+import { PersonForPost } from '../../Models/Person';
 
 @Component({
   selector: 'Detail',
@@ -14,10 +13,9 @@ import { HttpParams } from "@angular/common/http";
 
 export class DetailComponent implements OnInit {
   PersonModel = new PersonForPost();
-
   apiValues: string[] = [];
 
-  constructor(private _httpService: Http) {
+  constructor(private _httpService: Http, private _personListService: PersonListService) {
     
   }
   
@@ -26,24 +24,13 @@ export class DetailComponent implements OnInit {
   }
 
   onSubmit(form: NgForm) {
-    //console.log(JSON.stringify(this.PersonModel));
 
-    const requestOptions = {
-      params: new HttpParams()
-    };
-    requestOptions.params.set('Content-Type', 'application/json; charset=utf-8');
-    
-    this._httpService.post('/api/detail', this.PersonModel, requestOptions ).subscribe(values => {
-      //console.log("result receiving-> "+values.text());
-    });
-    
+    var result = this._personListService.addPerson(this.PersonModel);
+    if (result) {
+      console.log("Added User: " + this.PersonModel.name);
+    }
+
   }
 }
 
-export class PersonForPost {
-  public name: string;
-  public surname: string;
-  public age: number;
-  
-}
 

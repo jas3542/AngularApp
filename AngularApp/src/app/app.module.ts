@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from '../Components/Menu/menu.component';
 import { DetailComponent } from '../Components/Detail/detail.component';
 
-import { PersonListService } from '../Components/Menu/Service/PersonList.service';
+import { PersonListService } from '../Services/PersonList.service';
 
 @NgModule({
   declarations: [

@@ -1,5 +1,5 @@
 export class Person {
-  public id: number;
+  public id?: number;
   public name: string;
   public surname: string;
   public age: number;
@@ -11,6 +11,11 @@ export class Person {
     this.surname = surnamee;
     this.age = agee;
   }
-  
-  
+}
+
+export class PersonForPost {
+  public name: string;
+  public surname: string;
+  public age: number;
+
 }
