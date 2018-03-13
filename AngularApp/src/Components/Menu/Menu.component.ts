@@ -18,19 +18,13 @@ export class MenuComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.getPersons().then(function(result) {
-      this.personArray = result;
-    }.bind(this));
-  
+    this.getPersons();
   }
   
-  getPersons(): Promise<Person> {
-
-    return new Promise(function (resolve, reject) {
-
-      var personArray = this._personListService.getPersonList();
-      resolve(personArray);
-
-    }.bind(this));
+  getPersons(): void {
+    this._personListService.getPersonList().then(value => {
+      this.personArray = value as Person[];
+    });
   }
+  
 }
