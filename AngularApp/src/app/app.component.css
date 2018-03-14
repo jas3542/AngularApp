@@ -13,13 +13,18 @@ header h1 {
   background-color: lightyellow;
 }
 
-.menu {
+.ToolBar {
+  width: 30%;
+  border: 2px dashed palevioletred;
+}
+
+.ListPersons {
   width: 30%;
   border: 2px dashed red;
 }
 
-.detail {
-  width: 70%;
+.AddPersons {
+  width: 40%;
   border: 2px dashed green;
 }
 

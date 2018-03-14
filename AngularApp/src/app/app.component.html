@@ -4,11 +4,20 @@
 </header>
 
 <div class="container">
-  <div class="menu">
-    <Menu></Menu>
+  <div class="ToolBar">
+    <ToolBar></ToolBar>
   </div>
-  <div class="detail">
-    <Detail></Detail>
-  </div>
+
+  <router-outlet></router-outlet>
+
+  <!-- not needed if you have the router. Check app.module.ts
+    <div class="ListPersons">
+      <ListPersons></ListPersons>
+    </div>
+    <div class="AddPersons">
+      <AddPersons></AddPersons>
+    </div>
+  -->
+
 </div>
 

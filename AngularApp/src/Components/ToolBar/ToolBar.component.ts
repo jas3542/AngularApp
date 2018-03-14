@@ -1,17 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { Http } from '@angular/http';
-//import { Person } from '../../Models/Person';
 import { NgForm } from '@angular/forms';
 import { PersonListService } from '../../Services/PersonList.service';
 import { PersonForPost } from '../../Models/Person';
 
 @Component({
-  selector: 'Detail',
-  templateUrl: './detail.component.html',
-  styleUrls: ['./detail.component.css']
+  selector: 'ToolBar',
+  templateUrl: './ToolBar.component.html',
+  styleUrls: ['./ToolBar.component.css']
 })
 
-export class DetailComponent implements OnInit {
+export class ToolBarComponent implements OnInit {
   PersonModel = new PersonForPost();
   apiValues: string[] = [];
 
@@ -24,12 +23,8 @@ export class DetailComponent implements OnInit {
   }
 
   onSubmit(form: NgForm) {
-
-    var result = this._personListService.addPerson(this.PersonModel);
-    if (result) {
-      console.log("Added User: " + this.PersonModel.name);
-    }
-
+    
+    
   }
 }
 
