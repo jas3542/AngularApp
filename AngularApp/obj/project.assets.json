@@ -13128,9 +13128,6 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
       "projectUniqueName": "C:\\WorkSpace2017Jas\\AngularApp\\AngularApp\\AngularApp.csproj",
       "projectName": "AngularApp",

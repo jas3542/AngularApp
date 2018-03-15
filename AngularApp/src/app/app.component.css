@@ -1,9 +1,6 @@
 header img {
   width: 2%;
 }
-header h1 {
-
-}
 
 .container {
   width: 100%;
@@ -14,17 +11,8 @@ header h1 {
 }
 
 .ToolBar {
-  width: 30%;
+  width: 15%;
   border: 2px dashed palevioletred;
 }
 
-.ListPersons {
-  width: 30%;
-  border: 2px dashed red;
-}
-
-.AddPersons {
-  width: 40%;
-  border: 2px dashed green;
-}
 
