@@ -12,7 +12,12 @@ header img {
 
 .ToolBar {
   width: 15%;
-  border: 2px dashed palevioletred;
+  border: 1px dashed palevioletred;
 }
 
+.Detail {
+  width: 100%;
+  height: 100%;
+  border: rebeccapurple dashed 1px;
+}
 

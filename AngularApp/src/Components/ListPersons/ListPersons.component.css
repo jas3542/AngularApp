@@ -1,0 +1,21 @@
+
+.filter {
+  padding: 5px 5px 5px 5px;
+}
+.table {
+  margin: 2px 2px; 
+  width: 100%;
+  height: 90%;
+}
+.table thead {
+  background-color: grey;
+  color: white;
+  width: 100%
+}
+.table tbody {
+  width: 100%
+}
+.table th {
+  padding: 4px 4px 5px 5px;
+  border: 1px double;
+}
