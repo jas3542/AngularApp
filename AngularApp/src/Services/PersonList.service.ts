@@ -31,9 +31,10 @@ export class PersonListService {
   getPersonsList(): Observable<Person[]> {
     return this._httpService.get('api/person')
       .map(res => {
+        console.log(res.json());
         return res.json().map(item => {
           return item;
         });
-      });;
+      });
   }
 }

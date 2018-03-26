@@ -30,20 +30,20 @@
         </th>
       </tr>
     </thead>
-    <tbody *ngFor="let value of filteredPerson" style="list-style: none;">
-      <tr>
-        <th>
-          {{value.id}}
-        </th>
-        <th>
-          {{value.name}}
-        </th>
-        <th>
-          {{value.surname}}
-        </th>
-        <th>
-          {{value.age}}
-        </th>
-      </tr>
+    <tbody>
+    <tr *ngFor="let value of filteredPerson" style="list-style: none;">
+      <th>
+        {{value.id}}
+      </th>
+      <th>
+        {{value.name}}
+      </th>
+      <th>
+        {{value.surname}}
+      </th>
+      <th>
+        {{value.age}}
+      </th>
+    </tr>
   </table>
 </div>
